@@ -7,6 +7,12 @@ project(pimouse_ros)
 find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
+<<<<<<< HEAD
+=======
+  std_srvs
+  message_generation
+  actionlib_msgs
+>>>>>>> 9387132c79791aec8bac2394896f1a9f98fb813a
 )
 
 ## System dependencies are found with CMake's conventions
@@ -43,6 +49,7 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
+<<<<<<< HEAD
 # add_message_files(
 #   FILES
 #   Message1.msg
@@ -68,6 +75,32 @@ find_package(catkin REQUIRED COMPONENTS
 #   DEPENDENCIES
 #   std_msgs
 # )
+=======
+add_message_files(
+  FILES
+  LightSensorValues.msg
+  MotorFreqs.msg
+)
+
+## Generate services in the 'srv' folder
+add_service_files(
+  FILES
+  TimedMotion.srv
+)
+
+## Generate actions in the 'action' folder
+add_action_files(
+  FILES
+  Music.action
+)
+
+## Generate added messages and services with any dependencies listed here
+generate_messages(
+  DEPENDENCIES
+  actionlib_msgs
+  std_msgs
+)
+>>>>>>> 9387132c79791aec8bac2394896f1a9f98fb813a
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -101,7 +134,11 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES pimouse_ros
+<<<<<<< HEAD
 #  CATKIN_DEPENDS rospy std_msgs
+=======
+  CATKIN_DEPENDS rospy std_msgs std_srvs message_runtime
+>>>>>>> 9387132c79791aec8bac2394896f1a9f98fb813a
 #  DEPENDS system_lib
 )
 
