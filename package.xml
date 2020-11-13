@@ -1,21 +1,13 @@
 <?xml version="1.0"?>
 <package>
   <name>pimouse_ros</name>
-<<<<<<< HEAD
   <version>0.0.0</version>
-=======
-  <version>1.0.0</version>
->>>>>>> 9387132c79791aec8bac2394896f1a9f98fb813a
   <description>The pimouse_ros package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
   <!-- Example:  -->
-<<<<<<< HEAD
   <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
-  <maintainer email="ubuntu@todo.todo">ubuntu</maintainer>
-=======
-  <maintainer email="g1711022@m.sojo-u.ac.jp">takafumi210</maintainer>
->>>>>>> 9387132c79791aec8bac2394896f1a9f98fb813a
+  <maintainer email="g1711022@m.sojo-u.ac.jp">ubuntu</maintainer>
 
 
   <!-- One license tag required, multiple allowed, one license per tag -->
@@ -27,11 +19,7 @@
   <!-- Url tags are optional, but mutiple are allowed, one per tag -->
   <!-- Optional attribute type can be: website, bugtracker, or repository -->
   <!-- Example: -->
-<<<<<<< HEAD
   <!-- <url type="website">http://wiki.ros.org/pimouse_ros</url> -->
-=======
-  <url type="website">https://github.com/ryuichiueda/raspimouse_book_info</url>
->>>>>>> 9387132c79791aec8bac2394896f1a9f98fb813a
 
 
   <!-- Author tags are optional, mutiple are allowed, one per tag -->
@@ -44,35 +32,18 @@
   <!-- Dependencies can be catkin packages or system dependencies -->
   <!-- Examples: -->
   <!-- Use build_depend for packages you need at compile time: -->
-<<<<<<< HEAD
   <!--   <build_depend>message_generation</build_depend> -->
   <!-- Use buildtool_depend for build tool packages: -->
   <!--   <buildtool_depend>catkin</buildtool_depend> -->
   <!-- Use run_depend for packages you need at runtime: -->
   <!--   <run_depend>message_runtime</run_depend> -->
-=======
-  <build_depend>message_generation</build_depend>
-  <!-- Use buildtool_depend for build tool packages: -->
-  <!--   <buildtool_depend>catkin</buildtool_depend> -->
-  <!-- Use run_depend for packages you need at runtime: -->
-  <run_depend>message_runtime</run_depend>
->>>>>>> 9387132c79791aec8bac2394896f1a9f98fb813a
   <!-- Use test_depend for packages you need only for testing: -->
   <!--   <test_depend>gtest</test_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>rospy</build_depend>
   <build_depend>std_msgs</build_depend>
-<<<<<<< HEAD
   <run_depend>rospy</run_depend>
   <run_depend>std_msgs</run_depend>
-=======
-  <build_depend>actionlib_msgs</build_depend>
-  <build_depend>std_srvs</build_depend>
-  <run_depend>rospy</run_depend>
-  <run_depend>std_msgs</run_depend>
-  <run_depend>actionlib_msgs</run_depend>
-  <run_depend>std_srvs</run_depend>
->>>>>>> 9387132c79791aec8bac2394896f1a9f98fb813a
 
 
   <!-- The export tag contains other, unspecified, tags -->
